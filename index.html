@@ -1,0 +1,186 @@
+<!DOCTYPE html >
+<html>
+<head> 
+    <meta charset="utf-" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container" >
+      <div class="nav-wrapper">
+         <div class="left-side">
+            <div class="nav-link-wrapper active-nav-links">
+                <a href="index.html">Home</a>
+            </div>
+
+             <div class="nav-link-wrapper">
+                 <a href="about.html">About</a>
+             </div>
+         </div>
+              
+         <div class="right-side">
+
+                  <div>JAVES ODHIAMBO</div>
+         </div>      
+        </div>
+    </div>
+      <div class="content-wrapper">
+         <div class="portfolio-items-wrapper">
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic1.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo1.png">
+                    </div>
+                    <div class="subtitle"> 
+                        Binary is Key
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic2.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo2.png">
+                    </div>
+                    <div class="subtitle"> 
+                        Silent impacts
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic3.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo3.png">
+                    </div>
+                    <div class="subtitle"> 
+                        My setup
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic4.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo4.jfif">
+                    </div>
+                    <div class="subtitle"> 
+                        Minds of Wonders
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic5.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo5.jfif">
+                    </div>
+                    <div class="subtitle"> 
+                        Systems update
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic6.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo6.jfif">
+                    </div>
+                    <div class="subtitle"> 
+                        Code
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic7.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo7.jpg">
+                    </div>
+                    <div class="subtitle"> 
+                        I built this logo
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic8.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo8.jfif">
+                    </div>
+                    <div class="subtitle"> 
+                        I built this logo
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic9.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo9.png">
+                    </div>
+                    <div class="subtitle"> 
+                        I built this logo
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic10.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo10.png">
+                    </div>
+                    <div class="subtitle"> 
+                        I built this logo
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/pic11.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo11.jfif">
+                    </div>
+                    <div class="subtitle"> 
+                        I built this logo
+                    </div>
+                </div>
+             </div>
+             <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background"style="background-image:url(images/pic12.jfif)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/logo12.png">
+                    </div>
+                    <div class="subtitle"> 
+                        Code is life
+                    </div>
+                </div>
+             </div>
+
+         </div>
+      </div>
+    </div>
+</body> 
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+portfolioItems.forEach(portfolioItem=>{
+  portfolioItem.addEventListener('mouseover', () => {
+    console.log(portfolioItem.childNodes[1].classList);
+    portfolioItem.childNodes[1].classList.add('img-darken');
+  })
+  portfolioItem.addEventListener('mouseout', () => {
+    portfolioItem.childNodes[1].classList.remove('img-darken');
+  })
+ 
+
+
+})
+</script>
+</html>
